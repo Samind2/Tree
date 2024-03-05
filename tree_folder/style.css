@@ -1,0 +1,38 @@
+.folder, .file {
+    margin-left: 20px;
+}
+
+.folder::before, .file::before {
+    content: '';
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    margin-right: 5px;
+    background-size: cover;
+}
+
+.folder::before {
+    background-image: url('folder.png');
+}
+
+.file::before {
+    background-image: url('folder2.png');
+}
+
+.button {
+    background-color: #4CAF50; /* เฉดสีพื้นหลัง */
+    color: white; /* เฉดสีข้อความ */
+    padding: 10px 10px; /* ขนาดขอบ */
+    font-size: 12px; /* ขนาดตัวอักษร */
+    border: none; /* ไม่มีเส้นขอบ */
+    border-radius: 5px; /* ความโค้งขอบ */
+    cursor: pointer; /* ตัวชี้เมาส์เป็นช่วงมือ */
+}
+
+.button:hover {
+    background-color: #45a049; /* เฉดสีพื้นหลังเมื่อโฮเวอร์ */
+}
+
+.selected {
+    background-color: #ccc; /* เปลี่ยนสีพื้นหลังเมื่อถูกเลือก */
+}
