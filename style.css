@@ -1,0 +1,84 @@
+/* style.css */
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+
+body {
+  font-family: "Oswald", sans-serif;
+  font-optical-sizing: auto;
+}
+
+#controls {
+    margin-top: 20px;
+    text-align: center; /* จัดตำแหน่งไว้ตรงกลาง */
+}
+
+#controls input[type="text"] {
+    padding: 10px 12px;
+    border: 1px solid #ccc; /* เพิ่มเส้นขอบ */
+    border-radius: 4px; /* ปรับความโค้งของขอบ */
+    margin-right: 5px;
+}
+
+#controls button {
+    padding: 8px 12px;
+    background-color: #b8635d;
+    color: rgb(255, 255, 255);
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#controls button:hover {
+    background-color: #4b0000;
+}
+
+#folderTree {
+    margin-top: 20px;
+    text-align: center; /* จัดตำแหน่งไว้ตรงกลาง */
+}
+
+.folder, .file {
+    margin-left: 20px;
+}
+
+.folder::before, .file::before {
+    content: '';
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    margin-right: 5px;
+    background-size: cover;
+}
+
+.folder::before {
+    background-image: url('folder.png');
+}
+
+.file::before {
+    background-image: url('folder2.png');
+}
+
+/* style.css */
+
+/* เพิ่มสีให้กับปุ่ม Delete */
+.delete-button {
+    padding: 8px 12px;
+    background-color: #b8635d;
+    color: rgb(255, 255, 255);
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-right: 10px; /* เพิ่มระยะห่างด้านขวาของปุ่ม */
+    font-family: "Oswald", sans-serif; /* เพิ่มรายละเอียดฟอนต์ */
+}
+
+.delete-button:hover {
+    background-color: #4b0000; /* เปลี่ยนสีเมื่อเม้าส์ไปชี้ */
+}
+
+/* เพิ่มระยะห่างระหว่างแถว */
+
+/* ปรับความห่างระหว่างโฟลเดอร์และไฟล์ */
+.folder, .file {
+    padding: 2px;
+    margin-left: 60px; /* เพิ่มระยะห่างด้านซ้ายของโฟลเดอร์และไฟล์ */
+}
